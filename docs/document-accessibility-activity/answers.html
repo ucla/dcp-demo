@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>UCLA DCP - Alice In Wonderland - Not accessible</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script src="disablefind.js"></script>
+      <script src="assets/jquery-visible/jquery.visible.min.js"></script>
+      <link href="assets/style.css" media="all" rel="stylesheet" type="text/css">
+   </head>
+   <body class="noScroll">
+      <div class="top"></div>
+      <h1 class="vis h1" tabindex="0">Alice In Not Accessible-land</h1>
+      <div class="vis">
+         <h2>Summary</h2>
+         <p>The Page is coded to simulate a screen reader experience on a document that is poorly marked up.</p>
+
+         <h3 id="q">Questions</h3>
+         <ul>
+            <li>Question 1: What did the shrinking potion taste like?</li>
+            <ul>
+               <li>a sort of mixed flavour of cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered toast</li>
+            </ul>
+            <li>Question 2: How tall was Alice when she was in the pool of tears?</li>
+            <ul>
+               <li>9 Feet</li>
+            </ul>
+            <li>Question 3: What did Alice give out as prizes for the race?</li>
+            <ul>
+               <li>Comfits, a sugary candy.</li>
+            </ul>
+            <li>Question 4: In the photo of the Dodo, what color is its beak?</li>
+            <ul>
+               <li>There is no photo of a Dodo.</li>
+            </ul>
+            <li>Question 4: In Chapter 5, where does Alice wake up?</li>
+            <ul>
+               <li>None, chapter 5 doesn't exist</li>
+            </ul>
+         </ul>
+
+
+         <h3>Page Alterations</h3>
+         <ul>
+            <li>If a user revisits the questions, focus is reset to the beginning of a document.</li>
+            <li>Text is not visible unless it is actively being read</li>
+         </ul>
+         <h3>Challenges</h3>
+      
+               <h5>Text not visible until you see it</h5>
+               <ul><li>This is not unlike a screen reader's behavior in a situation without structure.  Without providing a table of contents or some kind of structure, a screen reader will have to navigate a page by tabbing forward and backwards.</li></ul>
+               <h5>Questions aren't in order</h5>
+               <ul><li>Without structure, navigating a large document is often a bi directional experience, where a user may not know where they are specifically in a document</li></ul>
+               <h5>Lots of tabbing</h5>
+               <ul><li>Screen readers rely on structure to navigate larger docuemnts quickly. For example, a user is able to retrieve all headers or links and move quickly between them</li></ul>
+               <h5>There is no photo of a Dodo.</h5>
+               <ul><li>Images that aren't marked up correctly can be invisible to screen reader users. Images without proper alt text may not convey all of the information you desire the audience to get out of the image.</li></ul>
+               <h5>Chapter 5 isn't visible</h5>
+               <ul><li>Without a table of contents, it's hard for a user to gauge the situation.</li></ul>
+               <h5>Focus resets when scrolled back to the top</h5>
+               <ul><li>In a sequential environment that lacks structure, without navigation a screen reader user would have to manually traverse the dom, so to review a question, they would need to tab back up, then back to their position</li></ul>
+    
+      </div>
+   </body>
+</html>
